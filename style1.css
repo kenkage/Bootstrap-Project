@@ -7,23 +7,49 @@
    margin-top: 100px;
 }
 
-footer {
-   background: #333;
-   color: #eee;
-   font-size: 11px;
-   padding: 20px;
-}
-hr {
-    width: 100%;
-    align-content: center;
-}
-
 #searchInput {
    width: 200px;
    
 }
 
-.btn {
+.w{
+   margin-top: 4em;
+}
+
+#tab1 {
+   padding-right: 5px;
+}
+.row {
+   padding-top: 10px;
+}
+
+.tabbable {
+   margin-top: 2em;
+}
+
+.col-sm-5 {
+   margin-top: -6em;
+}
+
+.imagemain{
+   margin-top:50px;
+   width: 70%;
+   margin-bottom: 10px;
+}
+
+.tab-content2{
+    padding-right: 10em;
+    margin-top: 10em;
+}
+
+.col-sm-6 {
+   margin-top: 3em;
+}
+hr {
+    width: 100%;
+    align-content: center;
+}
+.jumbotron .btn {
    display: inline-block;
    width: 200px;
    font-weight: bold;
@@ -38,11 +64,12 @@ hr {
    transition: background-color 0.2s ease-out, color0.2s ease-out;
 }
 
-.btn:hover, .btn:active {
+.jumbotron .btn:hover, .jumbotron .btn:active {
    background-color: #fff;
    color: #000;
    transition: backround-color 0.3s ease-in, color0.3s ease-in;
 }
+
 
 
 .col-md-8
@@ -56,6 +83,14 @@ hr {
    padding-bottom: 10px;
 }
 
+
+
+footer {
+   background: #333;
+   color: #eee;
+   font-size: 11px;
+   padding: 20px;
+}
 
 /* --------------------------------------
    Layout
@@ -104,4 +139,4 @@ hr {
 /* Large desktop */
 @media (min-width: 1200px) {
 	
-}
+}s

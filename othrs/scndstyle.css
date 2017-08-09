@@ -1,0 +1,20 @@
+footer {
+   background: #333;
+   color: #eee;
+   font-size: 11px;
+   padding: 20px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 400px; }
+
+.img1 .img2 .img3{
+	width: 100%;
+}
