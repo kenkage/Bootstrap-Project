@@ -1,6 +1,6 @@
 .jumbotron
 {
-   background-image: url("images/us3.jpg") ;
+   background-image: url('images\\us3.jpg') ;
    color: #ffff80;
    height: 600px;
    background-attachment: fixed;
