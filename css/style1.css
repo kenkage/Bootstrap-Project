@@ -22,6 +22,7 @@
 
 .item {
    background-size: 100%;
+  
 }
 .preview {   
     text-align: justify;   
@@ -112,7 +113,7 @@ hr {
    text-align: center;
    outline: none;
    text-decoration: none;
-   transition: background-color 1.2s ease-out, color0.2s ease-out;
+   transition: background-color 0.2s ease-out, color0.2s ease-out;
 }
 
 .jumbotron .btn:hover, .jumbotron .btn:active {
