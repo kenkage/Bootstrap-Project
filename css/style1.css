@@ -1,6 +1,6 @@
 .jumbotron
 {
-   background-image: url('images\\us3.jpg') ;
+   background-image: url('../images/us3.jpg') ;
    color: #ffff80;
    height: 600px;
    background-attachment: fixed;
@@ -15,6 +15,49 @@
    width: 200px;
    
 }
+
+.search-query {
+  width: 20em;
+}
+
+.item {
+   background-size: 100%;
+}
+.preview {   
+    text-align: justify;   
+}
+
+#custom-search-form {
+        margin:0;
+
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+#custom-search-form .search-query {
+        padding-right: 3px;
+        
+        padding-left: 3px;
+         
+        
+       
+        border-radius: 3px;
+    }
+ 
+ #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        
+        border-radius: 3px;
+    }
+ 
 
 .w{
    margin-top: 4em;
@@ -39,6 +82,10 @@
    margin-top:50px;
    width: 70%;
    margin-bottom: 10px;
+}
+.tab-content1{
+   text-align: justify;
+    text-justify: inter-word;
 }
 
 .tab-content2{
@@ -65,7 +112,7 @@ hr {
    text-align: center;
    outline: none;
    text-decoration: none;
-   transition: background-color 0.2s ease-out, color0.2s ease-out;
+   transition: background-color 1.2s ease-out, color0.2s ease-out;
 }
 
 .jumbotron .btn:hover, .jumbotron .btn:active {

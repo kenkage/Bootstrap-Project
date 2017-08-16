@@ -15,7 +15,7 @@
     
     
     <!-- Custom CSS -->
-    <link href="style1.css" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,7 +29,7 @@
     <div class="container" id="main">
     <div class="navbar navbar-fixed-top navbar-inverse"> 
  
-    <div class="container">
+        <div class="container">
         <a href="index.html" class="navbar-brand">Weather</a>
 
         <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -56,19 +56,25 @@
               <li role="presentation" class="active"><a href="#">Google+ <span class="badge">39</span></a></li> 
 
             </ul>
-            <li> <a href="#" >Past Weather</a> </li>
-          
+            <li> <a href="#" >Past Weather</a> </li>   
+            <li><a class="temp"><i class="fa fa-sun-o fa-2x" aria-hidden="true"></i> 29&#x2103;</a></li>     
           </ul>
-          <form class="navbar-form pull-right">
-              <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
-              <button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"><i class="fa fa-search fa-lg"></i></span></button>
+          <div class="row">
+        <div class="span10">
+        
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <input type="text" class="search-query" placeholder="Search">
+                    <button type="submit" class="btn"><i class="fa fa-search fa-1g" aria-hidden="true"></i></button>
+                </div>
             </form>
-       
+        </div>
+  </div>
+       </div>
       </div>
     </div>
-    </div>
 
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -96,6 +102,7 @@
       <div class="item">
         <img src="images\\crousel4.jpg" alt="New York" class="img3">
         <div class="carousel-caption">
+         <p>We love films because they makes us feel something</p>
         </div>
       </div>
   
@@ -122,7 +129,7 @@
               <div class="tab-pane active" id="tab1">
                 <h4>Weather Forecast For August 9 Across India </h4>
                 
-                <img src="images\\tab2.jpg" class="thumbnail pull-left" alt="Placeholder image">
+                <img src="images\\tab2.jpg" class="thumbnail img-responsive pull-left" alt="Placeholder image">
                 </div><!-- end tab-pane -->
             </div><!-- end tab-content -->
           </div><!-- end tabbable -->
@@ -160,7 +167,7 @@
 
                     <div class="col-sm-5">
                   
-                    <div class="tab-content">
+                    <div class="tab-content1">
 
                 <p><h2 class="w">Weather System across the Country</h2>
                     The axis of Monsoon trough now passes through Ferozepur, Delhi, Banda, Daltonganj, and Balasore towards the west central Bay of Bengal.
@@ -179,11 +186,6 @@
 
                   </div>
 
-                  
-
-
-
-
                   <div class="col-sm-7">
                  
                   <div class="tabbable">
@@ -192,7 +194,7 @@
                       <div class="tab-pane active" id="tab1">
                         <h4>Weather Forecast For August 9 Across India </h4>
                         
-                        <img src="images\\tab2.jpg" class="thumbnail pull-left" alt="Placeholder image">
+                        <img src="images\\tab2.jpg" class="thumbnail img-responsive pull-right" alt="Placeholder image">
                         </div><!-- end tab-pane -->
                     </div><!-- end tab-content -->
                   </div><!-- end tabbable -->
@@ -213,9 +215,10 @@
               <div class="tab-pane active" id="tab1">
                
                 <div class="col-sm-4">
-                <img src="images\\article1.jpg" class="imagemain" alt="Placeholder image">  </div>
+                <img src="images\\article1.jpg" class="imagemain img-responsive" alt="Placeholder image">  </div>
                 <div class="col-sm-6">
-                 <a href="#"><h4>
+                 <a href="#">
+                 <h4>
                 At Least 13 Dead, 175 Injured After Powerful Quake Hits China <i>  Aug 8, 2017, 10:45 pm </i> EDT Officials say the death toll may rise.</h4></a> 
                 </div>
                 </div><!-- end tab-pane -->
@@ -241,7 +244,7 @@
               <div class="tab-pane active" id="tab1">
                
                 <div class="col-sm-4">
-                <img src="images\\article2.jpg" class="imagemain" alt="Placeholder image">  </div>
+                <img src="images\\article2.jpg" class="imagemain img-responsive" alt="Placeholder image">  </div>
                 <div class="col-sm-6">
                 <a href="#"> <h4>Whitewater Wildfire Closes Prime Solar Eclipse Viewing Area in Oregon <i> Aug 8, 2017, 5:00 pm </i> EDT
                         The blaze has shut down more than 117,000 acres of roads, trails and mountains.</h4> </a>
@@ -269,7 +272,7 @@
               <div class="tab-pane active" id="tab1">
                
                 <div class="col-sm-4">
-                <img src="images\\article3.jpg" class="imagemain" alt="Placeholder image">  </div>
+                <img src="images\\article3.jpg" class="imagemain img-responsive" alt="Placeholder image">  </div>
                 <div class="col-sm-6">
                 <a href="#">  <h4>Noru: Evacuations Ordered as Deadly Storm Swamps Japan <i> Aug 8, 2017, 8:15 am </i>EDT The storm continues to threaten flash flooding and landslides.</h4> </a>
 
@@ -291,48 +294,61 @@
              <a href="#"><h3>Humidity, risk of storms to increase in Midwest and Northeast late this week</h3></a> 
              <p>Following a stretch of dry weather, more humid air and the risk of showers and thunderstorms will spread from the Midwest late this week to the Northeast this weekend.  
               <ul class="unstyled">
-              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>  &nbsp;
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>  
                <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a> </ul>
-              </p> <br>
+              </p> 
 
               <a href="#"><h3>79 percent of kids from low-income families at risk for drowning, swimming study finds</h3></a> 
              <p>A USA Swimming Foundation study shows that while there has been notable improvement in the ability of young swimmers, there is still work to be done. 
               <ul class="unstyled">
-              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> &nbsp;
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> 
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a> </ul>
-              </p> <br>
+              </p> 
 
               <a href="#"><h3>Oregon officials fear unprepared solar eclipse visitors could lead to wildfire disaster</h3></a> 
              <p>A million people are expected to flock to Oregon's slice of land in the upcoming solar eclipse's totality path, but in a year with an elevated fire danger, officials are taking... 
               <ul class="unstyled">
-              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> &nbsp;
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> 
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a> </ul>
-              </p> <br>
+              </p> 
 
               <a href="#"><h3>City planning for natural disasters pivots from 'recovery to resilience'</h3></a> 
              <p>City officials see resilience as central to preparing for future disasters, and they work with local and global partners to get there. 
               <ul class="unstyled">
-              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> &nbsp;
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> 
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a> </ul>
-              </p> <br>
+              </p>
 
               <a href="#"><h3>Tropical systems to unleash torrential downpours in northern Caribbean</h3></a> 
              <p>Downpours will push westward across the northern islands of the Caribbean Sea, while a second tropical system, dubbed 99L, limps along farther to the east in the Atlantic. 
               <ul class="unstyled">
-              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> &nbsp;
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a> 
                 <a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a> </ul>
-              </p> <br>
+              </p> 
              
 
                 <hr>
 
 
-                <center><h3> From the Weather Channel </h3>
+                <center><h3> From the Weather Channel </h3></center>
 
+                <div class="row" id="moreInfo">
+                 <div class="col-lg-4">
+                  <iframe src="https://www.youtube.com/embed/tCOd_rUyEZg"> </iframe>
+                    <h4> National forecast for Monday, August 9 </h4>
+                 </div>
 
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/tCOd_rUyEZg">
-                </iframe>
-                <h4> National forecast for Monday, August 9 </h4></center>
+                     <div class="col-lg-4"> 
+                      <iframe src="https://www.youtube.com/embed/y60wDzZt8yg"></iframe>
+                      <h4>Sky News - Live</h4>
+                      </div>
+
+                      <div class="col-lg-4"> 
+                      <iframe src="https://www.youtube.com/embed/0UJfwiqnfsc"></iframe>
+                      <h4>Fox News Live Stream </h4>
+                      </div>
+
+                </div>
 
 
                   <hr>
@@ -369,10 +385,12 @@
           <h6>Copyright &copy; 2013 {name}</h6>
           </div><!-- end col-sm-2 -->
           
+          <div class="preview">
           <div class="col-sm-4">
             <h6>About Us</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div><!-- end col-sm-4 -->
+          </div><!-- end preview -->
           
           <div class="col-sm-2">
             <h6>Navigation</h6>
@@ -414,8 +432,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  
+    
   <!-- Custom JS -->
   <script src="includes/js/script.js"></script>
 
